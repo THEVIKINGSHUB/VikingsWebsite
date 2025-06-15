@@ -2,9 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE VIKINGS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello from macOS!</h1>
+  <header>
+    <h1>THE VIKINGS</h1>
+    <nav>
+      <a href="#chowpati">Chowpati</a>
+      <a href="#naari">Naari Bazaar</a>
+      <a href="#gamezone">Game Zone</a>
+      <a href="#mall">Mall</a>
+      <a href="#complaints">Complaints</a>
+    </nav>
+  </header>
+
+  <main class="grid-container">
+    <section id="chowpati" class="card">
+      <div class="overlay">
+        <h2>The Vikings Chowpati</h2>
+        <p>Explore a diverse range of street food</p>
+      </div>
+    </section>
+    <section id="naari" class="card">
+      <div class="overlay">
+        <h2>The Vikings Naari Bazaar</h2>
+        <p>Discover a women's marketplace</p>
+      </div>
+    </section>
+    <section id="gamezone" class="card">
+      <div class="overlay">
+        <h2>The Vikings Game Zone</h2>
+        <p>Enjoy fun and thrilling games</p>
+      </div>
+    </section>
+    <section id="mall" class="card">
+      <div class="overlay">
+        <h2>The Vikings Mall</h2>
+        <p>Shop at our shopping complex</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="complaints-btn">
+    <a href="#complaints">Customer Complaints</a>
+  </div>
+
+  <section id="complaints" class="complaints-form">
+    <h2>Customer Complaints</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <select required>
+        <option value="">Select Category</option>
+        <option value="chowpati">Chowpati</option>
+        <option value="naari">Naari Bazaar</option>
+        <option value="game">Game Zone</option>
+        <option value="mall">Mall</option>
+      </select>
+      <textarea placeholder="Describe your complaint" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
