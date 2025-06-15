@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  height: 300px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  border: 1px solid #444;
+}
+
+#chowpati {
+  background-image: url('https://source.unsplash.com/600x400/?streetfood');
+}
+
+#naari {
+  background-image: url('https://source.unsplash.com/600x400/?woman,market');
+}
+
+#gamezone {
+  background-image: url('https://source.unsplash.com/600x400/?arcade,gaming');
+}
+
+#mall {
+  background-image: url('https://source.unsplash.com/600x400/?shopping,mall');
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  padding: 1rem;
+}
+
+.complaints-btn {
+  text-align: center;
+  margin: 2rem;
+}
+
+.complaints-btn a {
+  padding: 0.75rem 2rem;
+  background: #444;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #777;
+  transition: background 0.3s;
+}
+
+.complaints-btn a:hover {
+  background: white;
+  color: black;
+}
+
+.complaints-form {
+  background: #222;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 8px;
+}
+
+.complaints-form h2 {
+  margin-bottom: 1rem;
+}
+
+.complaints-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.complaints-form input,
+.complaints-form select,
+.complaints-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: #111;
+  color: white;
+  border: 1px solid #555;
+}
+
+.complaints-form button {
+  padding: 0.75rem;
+  background: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.complaints-form button:hover {
+  background: #777;
+}
